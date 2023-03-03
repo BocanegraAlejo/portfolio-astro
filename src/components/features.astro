@@ -1,0 +1,66 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Aplicaciones Web",
+    description:
+      "diseño y desarrollo de aplicaciones web, incluyendo la creación de interfaces de usuario, el desarrollo de la lógica de negocios y la integración de diferentes tecnologías y servicios.",
+    icon: "mdi:cellphone-link",
+  },
+  {
+    title: "Aplicaciones Móviles",
+    description:
+      "Desarrollo de Aplicaciones moviles Hibridas. Utilizo Tecnologias como React Native o flutter.",
+    icon: "mdi:cellphone",
+  },
+  {
+    title: "E-Commerce",
+    description:
+      "soluciones de comercio electrónico para diferentes tipos de empresas",
+    icon: "mdi:cart-outline",
+  },
+  {
+    title: "Soluciones Personalizadas",
+    description:
+      "Soluciones únicas y a medida para diferentes necesidades empresariales.",
+    icon: "mdi:graph",
+  },
+  {
+    title: "Mantenimiento y Soporte",
+    description:
+      "servicios de mantenimiento y soporte para aplicaciones existentes, Podré asesorarlo sobre cómo resolver determinados problemas y proporcionar ayuda en actualizaciones de seguridad y funcionalidad.",
+    icon: "mdi:face-agent",
+  },
+  {
+    title: "Consultoría",
+    description:
+      "asesoramiento a empresas en la elección de tecnologías y en la planificación de proyectos de desarrollo de software.",
+    icon: "mdi:account-group",
+  },
+];
+---
+
+<ContentSection title="Servicios" id="servicios">
+ <!--  <Fragment slot="lead">
+    Astro comes <span class="text-primary">batteries included</span>. It takes
+    the best parts of
+    <span class="text-primary">state-of-the-art</span>
+    tools and adds its own <span class="text-primary">innovations</span>.
+  </Fragment> -->
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

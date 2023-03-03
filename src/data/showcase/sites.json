@@ -1,0 +1,47 @@
+[
+  {
+    "title": "FM LABERINTO",
+    "image": "./images/fmlaberinto.png",
+    "url": "https://fmlaberinto.com/"
+  },
+  {
+    "title": "FOLLOW ME ",
+    "image": "./images/followme.png",
+    "url": "https://www.followme.com.ar/"
+  },
+  {
+    "title": "RED TL",
+    "image": "./images/redtl.png",
+    "url": "http://redtl.com.ar/"
+  },
+  {
+    "title": "STARFEET",
+    "image": "./images/starfeet.png",
+    "url": "https://www.starfeetoficial.com/"
+  },
+  {
+    "title": "FM LABERINTO APP ANDROID",
+    "image": "./images/fmlaberinto-app.png",
+    "url": "https://play.google.com/store/apps/details?id=com.fmlaberinto"
+  },
+  {
+    "title": "LABERINTO LAS TONINAS",
+    "image": "./images/laberinto.png",
+    "url": "https://laberintolastoninas.com.ar/"
+  },
+  {
+    "title": "SOFIA FORBES JEANS ",
+    "image": "./images/sofiaforbes.png",
+    "url": "https://shop.sofiaforbesjeansparis.com/"
+  },
+  {
+    "title": "AM 1330 ROSARIO",
+    "image": "./images/am1330.png",
+    "url": "http://am1330rosario.com.ar/"
+  },
+  {
+    "title": "MORE PUNTO",
+    "image": "./images/morepunto.png",
+    "url": "https://www.morepunto.com.ar/"
+  }
+]

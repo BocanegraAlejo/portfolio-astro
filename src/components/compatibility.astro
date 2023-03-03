@@ -1,0 +1,88 @@
+---
+import CompatibilityList from "~/components/compatibility-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+
+const frameworks: Array<CompatibilityItem> = [
+  {
+    title: "Html",
+    icon: "front/html"
+  },
+  {
+    title: "Css",
+    icon: "front/css"
+  },
+  {
+    title: "JavaScript",
+    icon: "front/js"
+  },
+  {
+    title: "ReactJS",
+    icon: "front/react"
+  },
+  {
+    title: "VueJS",
+    icon: "front/vue"
+  },
+  {
+    title: "Astro",
+    icon: "front/astro"
+  },
+];
+
+const platforms: Array<CompatibilityItem> = [
+  {
+    title: "Php",
+    icon: "back/php"
+  },
+  {
+    title: "Laravel",
+    icon: "back/laravel"
+  },
+  {
+    title: "Node JS",
+    icon: "back/node"
+  },
+  {
+    title: "C",
+    icon: "back/c"
+  },
+  {
+    title: "Java",
+    icon: "back/java"
+  }
+ 
+];
+
+const db: Array<CompatibilityItem> = [
+  {
+    title: "MySQL",
+    icon: "db/mysql"
+  },
+  {
+    title: "Firebase",
+    icon: "db/firebase"
+  },
+ 
+ 
+ 
+];
+---
+
+<ContentSection title="Habilidades" id="habilidades">
+  <CompatibilityList
+    items={frameworks}
+    title="Front End"
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <CompatibilityList
+    items={platforms}
+    title="Back End"
+    url="https://docs.astro.build/guides/deploy/"
+  />
+  <CompatibilityList
+  items={db}
+  title="Base de Datos"
+  url="https://docs.astro.build/guides/deploy/"
+/>
+</ContentSection>
