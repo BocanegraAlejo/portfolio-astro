@@ -1,18 +1,17 @@
 ---
 import "@fontsource/inter/variable.css";
-import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
+import Habilidades from "~/components/habilidades.astro";
+import Servicios from "~/components/servicios.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
-import Showcase from "~/components/showcase.astro";
+import Trabajos from "~/components/trabajos.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
-  "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+  "Alejo Bocanegra - Portfolio.";
 ---
 
 <!DOCTYPE html>
@@ -64,10 +63,9 @@ const description =
     <Header />
     <Splash />
     <div class="space-y-24 px-8 py-32">
-    <!--  <Intro /> -->
-      <Features />
-      <Compatibility />
-      <Showcase />
+      <Servicios />
+      <Habilidades />
+      <Trabajos />
     </div>
     <Footer />
   </body>

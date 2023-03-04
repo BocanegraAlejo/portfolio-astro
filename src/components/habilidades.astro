@@ -1,5 +1,5 @@
 ---
-import CompatibilityList from "~/components/compatibility-list.astro";
+import HabilidadesList from "~/components/habilidades-list.astro";
 import ContentSection from "~/components/content-section.astro";
 import type { CompatibilityItem } from "~/types";
 
@@ -70,17 +70,17 @@ const db: Array<CompatibilityItem> = [
 ---
 
 <ContentSection title="Habilidades" id="habilidades">
-  <CompatibilityList
+  <HabilidadesList
     items={frameworks}
     title="Front End"
     url="https://docs.astro.build/core-concepts/framework-components/"
   />
-  <CompatibilityList
+  <HabilidadesList
     items={platforms}
     title="Back End"
     url="https://docs.astro.build/guides/deploy/"
   />
-  <CompatibilityList
+  <HabilidadesList
   items={db}
   title="Base de Datos"
   url="https://docs.astro.build/guides/deploy/"
